@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <script src="magic.js"></script>
+    <title>Prop1</title>
+</head>
+<body onload="init()">
+    <div style = "position: absolute;">
+        <div id = "overlay-image" onmousedown="onOverlayClick()">
+        </div>
+    </div>
+    <section class='menu center'>
+        <img id = "menu_small" src = "res/logo.png">
+        <img id = "menu" src='res/menu.png'>
+        <div class = "menu-items center">
+            <a href="#" class="menu-item">HOME</a>
+            <a href="#" class="menu-item">AKTUALNOŚCI</a>
+            <a href="#" class="menu-item">GALERIE</a>
+            <a href="#" class="menu-item">PRZEPISY</a>
+            <a href="#" class="menu-item">DLA RODZICÓW</a>
+            <a href="#" class="menu-item">ORGANIZATORZY</a>
+            <a href="#" class="menu-item">POLECAMY</a>
+        </div>
+    </section>
+    <img id = "bg" src = "res/bg.png">
+    <section>
+        <div class="section-banner">
+            <div id = "section-banner" class = "center"></div>
+            <p id = "bg_project" class = "section-title center">TŁO PROJEKTU</p>
+        </div>
+        <p class = "center" id = "project_text">W okresie wzrostu i rozwoju odpowiednio zbilansowana dieta ma kluczowy wpływ na rozwój i prawidłowe funkcjonowanie organizmu. Ważne, by wraz z jedzeniem dostarczać zarówno witaminy i składniki mineralne, jak i odpowiednią ilość energii (kalorii). Jak wynika z przeprowadzonych w 2013 r. badań Instytutu Żywności i Żywienia, nadmierną masę ciała ma obecnie ponad 1/5 dziewcząt i prawie 1/3 chłopców. Szczególnie niepokojąca jest dynamika przyrostu wagi polskich dzieci (najwyższa w Europie), obecność w ich żyłach blaszek miażdżycowych i zwiększone ryzyko rozwoju cukrzycy. Sytuacja taka jest następstwem zaburzenia podaży większości składników odżywczych.
+            <br><br>
+            W nadmiarze konsumowane są przede wszystkim cukry proste (słodycze, soki, napoje, przetworzone produkty zbożowe) i tłuszcz pochodzenia zwierzęcego. W diecie brakuje natomiast odpowiedniej ilości błonnika pokar-mowego, wielonienasyconych kwasów tłuszczowych i witamin. 
+            <br><br>
+            Prawidłowe żywienie w dzieciństwie pomaga cieszyć się zdrowiem w przyszłości, dlatego warto kształtować odpowie nawyki już od najmłodszych lat. 
+            </p>
+        <img id = "btn_news" class = "btn_dn center" src ="res/arrow.png" onmousedown="scrollToSection()" data-scroll-destination = "#news">
+    </section>
+    <section id = "news" class = "grey">
+        <div class = "section-banner">
+            <div id = "section-banner-grey" class = "center"></div>
+            <p id = "news_title" class = "section-title center">AKTUALNOŚCI</p>
+        </div>
+        <br><br>
+        <div class = "container-news center">
+            <div class = "container-news-item">
+                <div class = "container-news-image">
+                    <img id = "img-news" src = "res/sadcat.png" onmousedown="onImageClick()">
+                </div>
+                <div class = "container-news-panel">
+                    <p class = "container-news-title">Wkrótce będziemy edukować młodych Wrocławian</p>
+                    <p class = "container-news-text">Dzięki rozszerzaniu współpracy sponsorskiej zaczynamy obejmować edukacją żywieniową kolejne polskie miasta.</p>
+                    <img id = "btn_news" class = "btn_dn" src ="res/arrow.png">
+                </div>
+            </div>
+            <div class = "container-news-item">
+                <div class = "container-news-image">
+                    <img id = "img-news" src = "res/sadbork.jpeg" onmousedown="onImageClick()">
+                </div>
+                <div class = "container-news-panel">
+                    <p class = "container-news-title">Wkrótce będziemy edukować młodych Wrocławian</p>
+                    <p class = "container-news-text">Dzięki rozszerzaniu współpracy sponsorskiej zaczynamy obejmować edukacją żywieniową kolejne polskie miasta.</p>
+                    <img id = "btn_news" class = "btn_dn" src ="res/arrow.png">
+                </div>
+            </div>
+        </div>
+        <div class = "container-news center">
+            <div class = "container-news-item">
+                <div class = "container-news-panel">
+                    <p class = "container-news-title">Wkrótce będziemy edukować młodych Wrocławian</p>
+                    <p class = "container-news-text">Dzięki rozszerzaniu współpracy sponsorskiej zaczynamy obejmować edukacją żywieniową kolejne polskie miasta.</p>
+                    <img id = "btn_news" class = "btn_dn" src ="res/arrow.png">
+                </div>
+                <div class = "container-news-image">
+                    <img id = "img-news" src = "res/veryangry.png" onmousedown="onImageClick()">
+                </div>
+            </div>
+            <div class = "container-news-item">
+                <div class = "container-news-panel">
+                    <p class = "container-news-title">Wkrótce będziemy edukować młodych Wrocławian</p>
+                    <p class = "container-news-text">Dzięki rozszerzaniu współpracy sponsorskiej zaczynamy obejmować edukacją żywieniową kolejne polskie miasta.</p>
+                    <img id = "btn_news" class = "btn_dn" src ="res/arrow.png">
+                </div>
+                <div class = "container-news-image">
+                    <img id = "img-news" src = "res/cheems.jpg" onmousedown="onImageClick()">
+                </div>
+            </div>
+        </div>
+        <div style = "width: 100%;float: left;margin-top: 50px;margin-bottom:50px;">
+            <img id = "btn_news" class = "btn_dn center" src ="res/arrow.png" onmousedown="scrollToSection()" data-scroll-destination = "#workshop-section">
+        </div>
+    </section>
+    <section id = "workshop-section">
+        <div class="section-banner">
+            <div id = "section-banner" class = "center"></div>
+            <p id = "bg_project" class = "section-title center">PROFIL WARSZTATÓW</p>
+        </div>
+        <div class = "center" id = "workshop">
+            <div class = "workshop-item"><div class = "workshop-category">Cel:</div><div class = "workshop-text">promocja prawidłowych postaw żywieniowych zgodnych z wytycznymi IŻŻ</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Grupa docelowa:</div><div class = "workshop-text">dzieci, młodzież, rodzice</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Czas trwania projektu:</div><div class = "workshop-text">edycja mazowiecka: maj '14 - luty '16; edycja ogólnopolska: marzec - czerwiec '16</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Zakres:</div><div class = "workshop-text">200 warsztatów (po 50 zajęć w miastach: Wrocław, Białystok, Kielce, Poznań</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Forma:</div><div class = "workshop-text">dwugodzinne (90 min.) warsztaty kulinarne - informowanie o zaletach bogatego w składniki odżywcze jedzenia podczas wspólnego przygotowywania zdrowych posiłków</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Charakter:</div><div class = "workshop-text">bezpłatne</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Prowadzący:</div><div class = "workshop-text">osoby posiadające wiedzę w dziedzinie odżywiania, przygotowywania posiłków, z doświadczeniem pedagogicznym: m.in dietetycy pracujący w Instytucie Żywności i Żywienia, kucharze prowadzący kulinarne programy szkoleniowe finansowane ze środków Unii Europejskiej</div></div>
+            <div class = "workshop-item"><div class = "workshop-category">Regulamin:</div><div class = "workshop-text"><a href = "#" class = "workshop-text">KLIKNIJ TUTAJ</a></div></div>
+        </div>
+        <img src = "res/circle.png" class = "image-center circle">
+    </section>
+    <hr class="line-thin">
+    <hr class="line-thick">
+    <section>
+        <div class="section-banner">
+            <div id = "section-banner" class = "center"></div>
+            <p id = "bg_project" class = "section-title center">GALERIA</p>
+        </div>
+        <div class = "gallery center">
+            <div class = "gallery-row">
+                <div class = "gallery-item">
+                    <div class ="gallery-item-overlay">
+                        <div class = "gallery-item-overlay-bg"></div>
+                        <div class = "gallery-item-overlay-text" onmousedown="gallerySlideOut()">Sample text<br>
+                            <img class = "gallery-item-overlay-arrow" src="res/arrow_white.png">
+                        </div>
+                    </div>
+                    <img class = "gallery-image" src="res/dok.gif" onmousedown="gallerySlideIn()">
+                </div>
+                <div class = "gallery-item">
+                    <div class ="gallery-item-overlay">
+                        <div class = "gallery-item-overlay-bg"></div>
+                        <div class = "gallery-item-overlay-text" onmousedown="gallerySlideOut()">Sample text<br>
+                            <img class = "gallery-item-overlay-arrow" src="res/arrow_white.png">
+                        </div>
+                    </div>
+                    <img class = "gallery-image" src="res/CatDoingTheLaundry.gif" onmousedown="gallerySlideIn()">
+                </div>
+                <div class = "gallery-item">
+                    <div class ="gallery-item-overlay">
+                        <div class = "gallery-item-overlay-bg"></div>
+                        <div class = "gallery-item-overlay-text" onmousedown="gallerySlideOut()">Sample text<br>
+                            <img class = "gallery-item-overlay-arrow" src="res/arrow_white.png">
+                        </div>
+                    </div>
+                    <img class = "gallery-image" src="res/dogCONFUSE.gif" onmousedown="gallerySlideIn()">
+                </div>
+            </div>
+            <div class = "gallery-row">
+                <div class = "gallery-item">
+                    <div class ="gallery-item-overlay">
+                        <div class = "gallery-item-overlay-bg"></div>
+                        <div class = "gallery-item-overlay-text" onmousedown="gallerySlideOut()">Sample text<br>
+                            <img class = "gallery-item-overlay-arrow" src="res/arrow_white.png">
+                        </div>
+                    </div>
+                    <img class = "gallery-image" src="res/forsenBB.png" onmousedown="gallerySlideIn()">
+                </div>
+                <div class = "gallery-item">
+                    <div class ="gallery-item-overlay">
+                        <div class = "gallery-item-overlay-bg"></div>
+                        <div class = "gallery-item-overlay-text" onmousedown="gallerySlideOut()">Sample text<br>
+                            <img class = "gallery-item-overlay-arrow" src="res/arrow_white.png">
+                        </div>
+                    </div>
+                    <img class = "gallery-image" src="res/bogged.png" onmousedown="gallerySlideIn()">
+                </div>
+                <div class = "gallery-item">
+                    <div class ="gallery-item-overlay">
+                        <div class = "gallery-item-overlay-bg"></div>
+                        <div class = "gallery-item-overlay-text" onmousedown="gallerySlideOut()">Sample text<br>
+                            <img class = "gallery-item-overlay-arrow" src="res/arrow_white.png">
+                        </div>
+                    </div>
+                    <img class = "gallery-image" src="res/scrappyEZ.png" onmousedown="gallerySlideIn()">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class = "recipes">
+            <img class = "recipes-bg" src="res/gmod2.jpg">
+            <div class="section-banner recipes-foreground">
+                <div id = "section-banner" class = "center white"></div>
+                <p id = "bg_project" class = "section-title center">PRZEPISY</p>
+            </div>
+            <div class = meals>
+                <div class = "meals-list center">
+                    <div class = "meal">
+                        <div class = "meal-image">
+                            <img src="res/apple_icon.png">
+                        </div>
+                        <div class = "meal-text">ŚNIADANIA</div>
+                    </div>
+                    <div class = "meal">
+                        <div class = "meal-image">
+                            <img src="res/apple_icon.png">
+                        </div>
+                        <div class = "meal-text">II ŚNIADANIE</div>
+                    </div>
+                    <div class = "meal">
+                        <div class = "meal-image">
+                            <img src="res/apple_icon.png">
+                        </div>
+                        <div class = "meal-text">OBIAD</div>
+                    </div>
+                    <div class = "meal">
+                        <div class = "meal-image">
+                            <img src="res/apple_icon.png">
+                        </div>
+                        <div class = "meal-text">PODWIECZOREK</div>
+                    </div>
+                    <div class = "meal">
+                        <div class = "meal-image">
+                            <img src="res/apple_icon.png">
+                        </div>
+                        <div class = "meal-text">KOLACJA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "grey2">
+        <div class = "section-banner">
+            <div id = "section-banner-grey2" class = "center"></div>
+            <p id = "news_title" class = "section-title center">DLA RODZICÓW</p>
+        </div>
+        <table class = "table-parents center">
+            <tr class = "cross-row">
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+            </tr>
+            <tr class = "text-row">
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">WPŁYW ŻYWIENIA NA ZDROWIE</td>
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">NAJISTOTNIEJSZE SKŁADNIKI W DIECIE DZIECKA</td>
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">JAK POSTĘPOWAĆ Z NIEJADKIEM</td>
+                <td class = "empty-cell"></td>
+            </tr>
+            <tr class = "cross-row">
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+            </tr>
+            <tr class = "text-row">
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">ZASADY ZDROWEGO ŻYWIENIA DZIECI</td>
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">NAJCZĘSTSZE PROBLEMY W ŻYWIENIU DZIECI</td>
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">JAK POSTĘPOWAĆ Z DZIECKIEM OTYŁYM</td>
+                <td class = "empty-cell"></td>
+            </tr>
+            <tr class = "cross-row">
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+            </tr>
+            <tr class = "text-row">
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">CHARAKTERYSTYKA POSIŁKÓW</td>
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">JAK ZACHĘCIĆ DZIECKO DO JEDZENIA NOWYCH PRODUKTÓW</td>
+                <td class = "empty-cell"></td>
+                <td class = "text-cell">AKTYWNOŚĆ FIZYCZNA DZIECI</td>
+                <td class = "empty-cell"></td>
+            </tr>
+            <tr class = "cross-row">
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+                <td class = "empty-cell"></td>
+                <td class = "cross"></td>
+            </tr>
+        </table>
+        <img class = "grey-icon" src="res/grey_icon.png">
+    </section>
+    <hr class="line-thin">
+    <hr class="line-thick">
+    <section style="text-align: center;">
+        <div class="section-banner">
+            <div id = "section-banner" class = "center"></div>
+            <p id = "bg_project" class = "section-title center">ORGANIZATORZY</p>
+        </div>
+        <div class = "logo-list">
+            <div class = "creators creators-list">
+                <div class = "logo-text">Organizatorzy</div>
+                <div class = "logo-images">
+                    <img src="res/logo.png">
+                    <img src="res/green_logo.png">
+                </div>
+            </div>
+            <div class = "patrons creators-list">
+                <div class = "logo-text">Patroni</div>
+                <div class = "logo-images">
+                    <img src="res/izz_logo.png">
+                    <img src="res/arr_logo.png">
+                </div>
+            </div>
+            <div class = "sponsors creators-list">
+                <div class = "logo-text">Sponsorzy</div>
+                <div class = "logo-images">
+                    <img src="res/logo_fit.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="line-thin">
+    <hr class="line-thick">
+    <section class = "grey footer">
+        <img class="banner-footer" src="res/banner.png">
+    </section>
+    <hr class="line-footer">
+</body>
+</html>
